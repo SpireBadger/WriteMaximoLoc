@@ -7,23 +7,23 @@
 #           from maximo data.
 # ArcGIS Version:   ---
 # Python Version:   3.6
-# For a changelog of updates, visit the github at: https://github.com/SpireBadger/XXXX
+# For a changelog of updates, visit the github at: https://github.com/SpireBadger/WriteMaximoLoc
 # -----------------------------------------------------------------------
 
 # Import Modules
 import arcpy, datetime, sys
 
 # Set workspace
-# arcpy.env.workspace = r"C:\Users\08957\AppData\Roaming\ESRI\Desktop10.3\ArcCatalog\New Prod stl-pgisdb-23.lac1.biz (PGIS3).sde"
+arcpy.env.workspace = r"C:\Users\08957\AppData\Roaming\ESRI\Desktop10.3\ArcCatalog\New Prod stl-pgisdb-23.lac1.biz (PGIS3).sde"
 
 # Temp Workspace for script testing
-tempWs = r'C:\Scripts\MaximoLocationWrite\PGIS3.sde'
-arcpy.env.workspace = tempWs
+#tempWs = r'C:\Scripts\MaximoLocationWrite\PGIS3.sde'
+#arcpy.env.workspace = tempWs
 
 # Set base file
 # This is the test file, should be deleted or commented out in final code
-filename = r'C:\Scripts\MaximoLocationWrite\MxLocationCentroids.csv'
-#filename=r"\\tdatfile01\Test_DW\GIS\MxLocationCentroids\\MxLocationCentroids.csv"
+#filename = r'C:\Scripts\MaximoLocationWrite\MxLocationCentroids.csv'
+filename=r"\\tdatfile01\Test_DW\GIS\MxLocationCentroids\\MxLocationCentroids.csv"
 #filename=r"\\pdatfile01\Prod_DW\GIS\\MxLocationCentroids.csv"
 
 # Feature class name
